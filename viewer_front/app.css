@@ -1,0 +1,76 @@
+/* @font-face {
+  font-family: 'FinkHeavy';
+  src: url('FinkHeavy.eot');
+  src: url('FinkHeavy.eot?#iefix') format('embedded-opentype'),
+      url('FinkHeavy.woff2') format('woff2'),
+      url('FinkHeavy.woff') format('woff'),
+      url('FinkHeavy.ttf') format('truetype'),
+      url('FinkHeavy.svg#FinkHeavy') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+} */
+
+
+body{
+  background: #9dffb0;
+}
+
+.heading{
+  font-family: "FinkHeavy";
+  text-align: center;
+  font-size: 40pt;
+  color: #81f1f7;
+  border-style: solid;
+  border-color: #c48d3f;
+  border-width: 8pt;
+  padding:  10pt;
+  background-color: #c48d3f ;
+  border-radius: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+select{
+ padding: 1px;
+ margin: 115px;
+ margin-bottom: 25px;
+ width: 15%;
+}
+
+button{
+  border-width: 7px;
+  margin-left: 45%;
+}
+
+input{
+  border-width: 0px;
+}
+
+.card{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+  text-align: center;
+}
+
+.front{
+  background-color: green;
+}
+
+.back{
+  background-color: orange;
+  transform: rotateY(180deg);
+}
+
+.card-container:hover .card.front {
+  transform: rotateY(180deg);
+}
+.card-container:hover .card.back {
+  transform: rotateY(360deg);
+}
+
+
